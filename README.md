@@ -34,7 +34,7 @@ The main difference between forEach and map is that while forEach doesn’t retu
 
 2. What is the difference between a function and a method?
 
- A function is called by a name that optionally returns data. A method is called by a name that is associated with an Object. Methods also are able to operate on data that are contained within the class. Methods are implicitly passed on the object in which is called.
+ A function is called by a name that optionally returns data. A method is called by a name that is associated with an Object. Methods also are able to operate on data that are contained within the class. Methods are defined on the object in which is called.
 
 3. What is closure?
 
@@ -44,7 +44,7 @@ The main difference between forEach and map is that while forEach doesn’t retu
 
  Global binding: When in the global scope, the value will be the window/console object. This should be avoided.
 
- Implicit binding: Only occurs with 	objects but not with functions, the `this` value is the Object in which the method is applied to. Automatically bound to the context of the `this` keyword.
+ Implicit binding: Only occurs with objects but not with functions, the `this` value is the Object in which the method is applied to. Automatically bound to the context of the `this` keyword.
 
  Explicit binding: for functions - when call, apply, or bind is used (those specific methods), `this` is explicitly defined.
 
@@ -53,7 +53,7 @@ The main difference between forEach and map is that while forEach doesn’t retu
 
 5. Why do we need super() in an extended class?
 
-The super keyword is used to call the methods of the parent class explicitly.
+The super keyword is used to call the constructor of the parent class. This enables the child instance to inherit the properties of the parent.
 
 ## Project Set up
 
